@@ -7,11 +7,11 @@
 body {
     display: flex;
     flex-direction: column;
-    
+    flex: 1;
 }
 
 img{
-    width: 250px;
+    width: 100px;
     height: auto;
 }
 
@@ -25,6 +25,9 @@ a {
 }
 
 .header {
+    background-color:aqua;
+    flex: 1 1 50px;
+
     display: flex;
 
 }
@@ -36,11 +39,21 @@ a {
 }
 
 .hero.section{
-    display: flex;
+    background-color: yellow;
+    flex: 2 1 200px; /*height inherit due to flex-direction: column parent */
+
+    display: flex; /* makes the items inside the section flex items */
+    
+}
+
+.main.section{
+    background-color: greenyellow;
+    flex: 2 1 200px; /*height inherit due to flex-direction: column parent */
 }
 
 .images.section{
-    display: flex;
+
+    display: flex; /* makes the items inside the section flex items */
 }
 
 .images img{
@@ -49,11 +62,17 @@ a {
 }
 
 .quote.section{
+    background-color: yellowgreen;
+    flex: 2 1 200px;
+
     text-align: center;
 }
 
 .calltoaction.section{
-    display: flex;
+    background-color: yellow;
+    flex: 2 1 200px; /*height inherit due to flex-direction: column parent */
+
+    display: flex; /* makes the item inside the section flex items */
     justify-content: center;
 }
 
@@ -63,6 +82,10 @@ a {
 }
 
 .footer.section{
-    display: flex;
+    background-color: red;
+    flex:1 1 50px; /* height inherit due to flex-direction: column*/
+
+    display: flex; /* makes the item inside the section flex items */
     justify-content: center;
+    align-items: center;
 }
