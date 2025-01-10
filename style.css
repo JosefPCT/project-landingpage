@@ -8,6 +8,7 @@ body {
     display: flex;
     flex-direction: column;
     flex: 1;
+    align-items: center;
 }
 
 img{
@@ -24,12 +25,31 @@ a {
     color: black;
 }
 
+.top .section{
+    padding: 15px;
+    background-color: yellow; /* jf visual guide */
+    display: flex; /* row default*/
+    
+}
+
 .header {
-    background-color:aqua;
-    flex: 1 1 50px;
+    display: flex; /* row default */
+    justify-content: space-between; /* spaces the header section */
+}
 
+.header ul {
+    display: flex; /* makes the list inline flex */
+    gap: 8px; /* adds gap between list items */
+}
+
+/* old code removed some containers
+
+.header {
     display: flex;
-
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 750px;
+    padding: 15px;
 }
 
 .header ul{
@@ -37,18 +57,22 @@ a {
     display: flex;
     gap: 8px;
 }
+*/
 
 .hero.section{
-    background-color: yellow;
-    flex: 2 1 200px; /*height inherit due to flex-direction: column parent */
-
-    display: flex; /* makes the items inside the section flex items */
     
 }
 
-.main.section{
+
+.main {
+    padding: 15px;
     background-color: greenyellow;
-    flex: 2 1 200px; /*height inherit due to flex-direction: column parent */
+    display: flex;
+}
+
+.main h2{
+    display: flex;
+    justify-content: center;
 }
 
 .images.section{
@@ -69,14 +93,11 @@ a {
 }
 
 .calltoaction.section{
-    background-color: yellow;
-    flex: 2 1 200px; /*height inherit due to flex-direction: column parent */
-
-    display: flex; /* makes the item inside the section flex items */
-    justify-content: center;
+    
 }
 
 .calltoaction.box{
+    display: flex;
     background: blue;
     
 }
