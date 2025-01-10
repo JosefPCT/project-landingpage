@@ -12,8 +12,8 @@ body {
 }
 
 img{
-    width: 100px;
-    height: auto;
+    width: 300px;
+    height: 200px;
 }
 
 ul{
@@ -25,6 +25,9 @@ a {
     color: white;
 }
 
+button {
+ width: 100px;
+}
 
 
 .section {
@@ -79,8 +82,18 @@ a {
 }
 */
 
-.hero.section{
-    
+.hero{
+    display: flex;
+}
+
+.hero.container{
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero img{
+    flex-basis: 60%;
 }
 
 
