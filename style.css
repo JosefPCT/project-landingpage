@@ -173,37 +173,30 @@ button {
 /* call to action section */
 
 .calltoaction.section{
-    flex-basis: 200px;
-    display: flex;
-    justify-content: center;
+    flex-basis: 200px; 
+    display: flex; /* makes calltoaction container a flex items */
+    justify-content: center; 
     align-items: center;
     background-color: black;
     color: white;
 }
 
 .calltoaction.container{
-    display: flex;
+    display: flex; /* makes the containers inside a flex item */
     background-color: blue;
-    gap: 50px;
+    gap: 50px; /* adds gap between the two containers */
     align-items: center;
     
 }
 
 .calltoaction.container div{
-    padding: 50px;
+    padding: 50px; /* adds padding inside the two containers */
 }
 
 .calltoaction.container div:nth-of-type(2){
     border: 1px solid red;
     
 }
-
-.calltoaction button{}
-
-
-
-
-
 
 
 /* footer.section */
