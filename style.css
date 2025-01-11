@@ -134,13 +134,12 @@ button {
 
 .image img{
     border: 1px solid red;
-    border-radius: 10px;
+    border-radius: 10px; /* adds radius to the image */
 }
 
 .image p {
     /* border: 1px solid green; */
-    
-    margin-left: 15px;
+    margin-left: 15px; /* lines up with the start of the image, !!!need to refactor*/
 }
 
 
@@ -149,10 +148,29 @@ button {
 
 .quote.section{
     background-color: yellowgreen;
-    flex: 2 1 200px;
-
+    flex-basis: 200px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.quote.container{
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote.container blockquote{
+    border: 1px solid green;
+}
+
+.quote.container address{
+    border: 1px solid white;
+    align-self: flex-end;
+}
+
+/* call to action section */
 
 .calltoaction.section{
     
