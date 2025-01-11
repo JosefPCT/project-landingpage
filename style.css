@@ -147,9 +147,9 @@ button {
 
 
 .quote.section{
-    background-color: yellowgreen;
+    background-color: #E5E7EB;
     flex-basis: 200px;
-    text-align: center;
+    text-align: center;  /* makes the text centered */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -173,14 +173,40 @@ button {
 /* call to action section */
 
 .calltoaction.section{
+    flex-basis: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.calltoaction.container{
+    display: flex;
+    background-color: blue;
+    gap: 50px;
+    align-items: center;
     
 }
 
-.calltoaction.box{
-    display: flex;
-    background: blue;
+.calltoaction.container div{
+    padding: 50px;
+}
+
+.calltoaction.container div:nth-of-type(2){
+    border: 1px solid red;
     
 }
+
+.calltoaction button{}
+
+
+
+
+
+
+
+/* footer.section */
 
 .footer.section{
     background-color: red;
