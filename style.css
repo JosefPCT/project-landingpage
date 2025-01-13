@@ -5,6 +5,8 @@
 }
 
 body {
+    font-family: Roboto;
+
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -27,6 +29,11 @@ a {
 
 button {
  width: 100px;
+ background-color: #3882F6;
+ border: 2px solid white;
+ border-radius: 5px;
+ color: white;
+ padding: 5px 15px;
 }
 
 
@@ -38,6 +45,28 @@ button {
 }
 
 /* top section */
+
+/* styling*/
+.hero h1{
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.hero p{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.header p{
+    font-size: 24px;
+    color: #F9FAF8;
+}
+
+.hero button{
+    border-color: #1F2937;
+}
+/* layout */
 
 .top.section{
     color: white; /* text color for top section*/
@@ -101,6 +130,16 @@ button {
 
 /* main section */
 
+/* style */
+
+.main h2{
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+}
+
+/* layout */
+
 .main.section{
     background-color: rgb(255, 255, 255);
     padding: 15px 100px 50px 100px; 
@@ -145,6 +184,16 @@ button {
 
 /* quote section */
 
+/* style */
+
+.quote blockquote{
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+/* layout */
 
 .quote.section{
     background-color: #E5E7EB;
@@ -183,7 +232,7 @@ button {
 
 .calltoaction.container{
     display: flex; /* makes the containers inside a flex item */
-    background-color: blue;
+    background-color: #3882F6;
     gap: 50px; /* adds gap between the two containers */
     align-items: center;
     
