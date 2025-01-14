@@ -1,0 +1,7 @@
+-> find a way to have the img in hero section fit better
+
+-> make the images in the main section, smaller a rounded box
+-> polish main section
+
+-> polish the buttons
+-> Polish whole site

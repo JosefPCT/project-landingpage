@@ -112,8 +112,10 @@ button {
 */
 
 .hero img{
-    width: 400px;
-    height: 300px;
+    flex: 1;
+    width: 300px;
+    height: 250px;
+    object-fit: cover; /* avoids squishing/stretch in img will crop the picture if needed */
     /* border: 1px solid red; */
 } 
 
@@ -121,15 +123,15 @@ button {
     display: flex;
     gap: 20px;
     /* border: 1px solid green; */
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .hero.container{
     flex-basis: 40%;
     display: flex;
     flex-direction: column;
-    /* border: 1px solid red; */
-    justify-content: stretch;
+    /* border: 1px solid orange; */
+    
 }
 
 
@@ -166,27 +168,33 @@ button {
     gap: 30px;
     flex-wrap: wrap;
     align-items: center;
+    
 }
 
 .image.container{
+    
     /* border: 1px solid blue; */
     display: flex; /* makes the images and p flex items */
+    flex-direction: column;
     flex-wrap: wrap;
     flex: 1;
     justify-content: center; /* centers images and p inside the container */
-    
+    align-items: center;
 }
 
 .image img{
     /* border: 1px solid red; */
-    width: 300px;
+    width: 330px;
     height: 200px;
+    object-fit: cover; /* avoids stretching/squishing of image, crops the picture */
     border-radius: 10px; /* adds radius to the image */
 }
 
 .image p {
+    padding-top: 8px;
     /* border: 1px solid green; */
-    margin-left: 15px; /* lines up with the start of the image, !!!need to refactor*/
+    /* margin-left: 15px; lines up with the start of the image, !!!need to refactor */
+    
 }
 
 
